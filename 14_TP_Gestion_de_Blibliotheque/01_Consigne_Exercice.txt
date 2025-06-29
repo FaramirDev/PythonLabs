@@ -1,0 +1,35 @@
+Exercice : Système de Gestion de Bibliothèque avec Emprunts
+
+Objectif : Créer un système de gestion de bibliothèque qui permet d'ajouter, de supprimer, d'emprunter et de retourner des livres. 
+
+Les livres doivent avoir des informations comme le titre, l'auteur, l'année de publication, et un identifiant unique. 
+Les emprunts doivent être enregistrés avec la date d'emprunt et la date de retour prévue.
+
+Instructions :
+
+Création du Fichier de Livres :
+
+Crée un fichier texte (livres.txt) pour stocker les informations sur les livres. Chaque ligne du fichier représente un livre avec le format suivant : ID,Titre,Auteur,Année,Disponibilité.
+Par exemple : 1,Le Petit Prince,Antoine de Saint-Exupéry,1943,Disponible.
+
+Création du Fichier d'Emprunts :
+
+Crée un fichier texte (emprunts.txt) pour stocker les informations sur les emprunts. Chaque ligne du fichier représente un emprunt avec le format suivant : ID_Livre,ID_Emprunt,Titre,Lecteur,Date_Emprunt,Date_Retour.
+Par exemple : 1,1,Le Petit Prince,Jean,2025-10-01,2025-10-15.
+Fonctionnalités à Implémenter :
+
+Ajouter un Livre : Ajoute un nouveau livre à la fin du fichier livres.txt.
+Supprimer un Livre : Supprime un livre spécifique du fichier livres.txt.
+Emprunter un Livre : Change l'état d'un livre de Disponible à Emprunté et ajoute un enregistrement dans emprunts.txt.
+Retourner un Livre : Change l'état d'un livre de Emprunté à Disponible et supprime l'enregistrement correspondant dans emprunts.txt.
+Afficher Tous les Livres : Affiche tous les livres avec leur statut.
+Afficher les Emprunts en Cours : Affiche tous les emprunts en cours.
+Quitter le Programme : Sauvegarde les modifications et quitte le programme.
+Implémentation :
+
+Crée des fonctions pour chaque fonctionnalité.
+Utilise des opérations de lecture et d'écriture de fichiers pour manipuler les informations sur les livres et les emprunts.
+Bonus :
+
+Ajoute une fonctionnalité pour rechercher des livres par titre ou auteur.
+Ajoute une fonctionnalité pour afficher les emprunts en retard.
