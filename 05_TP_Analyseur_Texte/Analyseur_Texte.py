@@ -52,7 +52,6 @@ def calcul_frequence(user_input):
         for alphabet in list_alphabet:
             recup_count = mot.count(alphabet)
             if recup_count > 0 and alphabet!= "*":
-                print(f"Dans ce Texte, il y a {recup_count} de {alphabet}")
                 data_alphabet[alphabet] = recup_count
 
     return data_alphabet
@@ -63,32 +62,38 @@ def programe():
     
     texte = input("Veuillez entrez votre Texte ! Nous l'analyserons ! Ici --->")
 
+    ## CALCUL 
     nb_mot_len = calcul_mot(texte)
-    print(f"Dans ce texte, il y a {nb_mot_len} de Mots !")
-    ## MAJ DATA Mot
     data["data_mot"] = nb_mot_len
 
     nb_lettre = calcul_lettre_espace_off(texte)
-    print(f"Dans ce texte, il y a {nb_lettre} lettre SANS les ESPACES !")
-    ## MAJ DATA lettre
     data["data_lettre"] = nb_lettre
 
-    
     nb_lettre_avec_espace = calcul_lettre_espace_on(texte)
-    print(f"Dans ce texte, il y a {nb_lettre_avec_espace} lettre AVEC les Espaces !")
-    ## MAJ DATA Lettre avec Espace
     data["data_lettre_espace"] = nb_lettre_avec_espace
 
     data_alphabet = calcul_frequence(texte)
     data["data_alphabet_all"] = data_alphabet
 
-    print(data)
+    data_espace = nb_lettre_avec_espace - nb_lettre
+    ## AFFICHAGE 
+    print("--- ANALYSE ---")
+    print(f" * -- Nombre de Mots : {nb_mot_len} ")
+    print(f" * -- Nombre de Lettre : {nb_lettre} ")
+    print(f" * -- Nombre d'Espace :{data_espace}")
+
+    recup_list_alpha = data['data_alphabet_all']
+    print(" ==> ANALYSE Lettres Detail :")
+    for analyse in recup_list_alpha:
+        nb = recup_list_alpha[analyse] 
+        print(f"    - La Lettre {analyse} : {nb} fois")
+
     return data 
 
 ## START 
 data = programe()
 
-print(data["data_alphabet_all"])
+
 
 
 

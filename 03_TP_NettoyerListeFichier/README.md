@@ -1,7 +1,7 @@
 # TP 03 – Nettoyer Fichier 🧹📊
 
 Ce TP a pour objectif de :
-- Filtrer la DATA 
+- Filtrer la DATA - Trouve les valeurs Vide, ou mauvaise Extension
 - Cleaner la DATA 
 
 ---
@@ -11,6 +11,7 @@ Ce TP a pour objectif de :
 - nettoyerlistefichier.py # Script principal
 - images/ # Images pour le README
 
+--- 
 ## 📊 Données utilisées 
 
 - Data use : fichiers = ["log.txt", "", "log.txt", "data.csv", "temp.tmp", "notes.txt"]

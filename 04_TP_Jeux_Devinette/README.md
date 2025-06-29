@@ -1,4 +1,4 @@
-# TP 04 – Jeux Devienette 🧹📊
+# TP 04 – Jeux Devinette 🧹📊
 
 Ce TP a pour objectif de :
 - Créer un mini jeu avec le modume Random
