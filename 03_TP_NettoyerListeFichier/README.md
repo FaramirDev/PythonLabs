@@ -1,4 +1,4 @@
-# TP 02 – Nettoyer Fichier 🧹📊
+# TP 03 – Nettoyer Fichier 🧹📊
 
 Ce TP a pour objectif de :
 - Filtrer la DATA 
@@ -7,7 +7,7 @@ Ce TP a pour objectif de :
 ---
 
 ## 📁 Structure
-02_TP_Data/
+03_NettoyerListeFichier/
 - nettoyerlistefichier.py # Script principal
 - images/ # Images pour le README
 
