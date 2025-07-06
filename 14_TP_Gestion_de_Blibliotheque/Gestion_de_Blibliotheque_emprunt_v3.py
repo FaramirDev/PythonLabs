@@ -3,8 +3,8 @@ import os, random as rd
 ## OBJECTIF : GESTION BIBLIO 
 
 ## == DATA == ## 
-path_data_book = "D:/03_Script/02_projet_Training/Gestion_de_Blibliotheque/data/data_book.txt"
-path_data_emprunt = "D:/03_Script/02_projet_Training/Gestion_de_Blibliotheque/data/data_emprunt.txt"
+path_data_book = "data/data_book.txt"
+path_data_emprunt = "data/data_emprunt.txt"
 
 list_path = [path_data_book, path_data_emprunt]
 

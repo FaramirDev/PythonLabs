@@ -145,7 +145,7 @@ def creation_transaction(data):
 
 #### SET UP & Charge and SAVE DATA ####
 #### ============================= ####
-data_path_transaction = "D:/03_Script/02_projet_Training/Gestion_Budget/data/data_transaction.txt"
+data_path_transaction = "data/data_transaction.txt"
 ## si not create
 if not os.path.exists(data_path_transaction) :
     with open(data_path_transaction, 'w') as f:

@@ -7,7 +7,7 @@ import os
 ## == DATA BASE == ## 
 all_data_stock = {}
 
-path_save_data = "16_APP_Systeme_Gestion_de_Stock/data/data_stock.txt"
+path_save_data = "data/data_stock.txt"
 path_save = path_save_data
 list_path_data = [path_save_data]
 

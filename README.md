@@ -27,7 +27,7 @@ Réalisés dans le cadre de l’apprentissage de Python appliqué et l'explorati
 - `15_TP_Gestion_Budget` : Syteme Gestion de Buget
 - `16_APP_Systeme_Gestion_de_Stock` : Application Lecture Data, Create, Modif, Save
 - `17_APP_Running` : Application de Prediction Temps, puis creation d'un fichier CSV.
-- `18_APP_Emprunt_Calcul` : Application pour Prédire la Capactité d'Emprunt, puis Création d'un fichier CSV
+- `18_APP_Empruntator` : Application pour Prédire la Capactité d'Emprunt, puis Création d'un fichier CSV
 
 
 Chaque dossier contient :
