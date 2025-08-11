@@ -6,7 +6,7 @@ Empruntator est une mini‑application  ecrite en Python 3 / Tkinter
 # Objectif : 
 
 - Calculer votre capacité maximale d’emprunt à partir d’un salaire brut (mensuel ou annuel)
-- Générer automatiquement un tableau d’amortissement mensuel
+- Générer automatiquement un tableau d’amortissement mensuel en fonction ( affichage de quelques lignes )
 - Exporter ce tableau au format CSV.
 
 ---
@@ -25,7 +25,7 @@ Empruntator est une mini‑application  ecrite en Python 3 / Tkinter
 
 ---
 
-## Fonctionnement général
+## Fonctionnement Général
 
 - Après avoir renseigné vos données (salaire brut, durée du prêt, apport et taux d’intérêt)
 
@@ -37,11 +37,13 @@ Empruntator est une mini‑application  ecrite en Python 3 / Tkinter
 
 ---
 
-## Installation 
--  Aucun package externe requis mise a part Python. >= 3.8 conseillé.
+# Install 
+
+- Aucun package externe requis mise a part Py.
+
 ---
 
-## Lancement de l'Appliaction
+# Lancement de l'Application
 - `python empruntator.py`
 
 Une fenêtre “Empruntator” s’ouvre (540 × 640 px).
@@ -53,14 +55,14 @@ Une fenêtre “Empruntator” s’ouvre (540 × 640 px).
 - Salaire Brut - Montant brut (en €). 
 - Year Emprunt - Durée du Pret en Années
 - Apport - Votre Apport personnel en €
-- Taux Intéret - Taux Nominal annuel ( ex : 3.2 pour 3.5% )
+- Taux Intéret - Taux Nominal annuel ( ex : 3.5 pour 3.5% )
 - Menu Month / Year, le type de Salaire Saisi
 - Calculer - Lance tous les Calculs et Affiche les Résultats et les 10 premières lignes du Tableau d'Amortissement. 
 - Export CSV - Save le Talbeau d'Amoortissement en CSV
 
 ---
 
-## Détails des Formules Financière 
+## Détails des Formules Financière utilsés
 
 - Salaire Net Mensuel : `Net = Brut * ( 1 - 0.18 )`
 - Plafond d'Endettement Mensuel : `Cap = 0.35 * net`
