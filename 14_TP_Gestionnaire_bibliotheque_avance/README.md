@@ -12,10 +12,14 @@ Ce script Python permet de gérer une bibliothèque en offrant des fonctionnalit
 - **Afficher tous les emprunts** : Affiche tous les emprunts en cours.
 - **Quitter le programme** : Sauvegarde les modifications et quitte le programme.
 
+---
+
 ## Structure des Fichiers
 
-- **livres.txt** : Stocke les informations sur les livres. Chaque ligne du fichier représente un livre avec le format suivant : `ID,Titre,Auteur,Année,Disponibilité`.
-- **emprunts.txt** : Stocke les informations sur les emprunts. Chaque ligne du fichier représente un emprunt avec le format suivant : `ID_Emprunt,ID_Livre,Titre,Lecteur,Date_Emprunt,Date_Retour`.
+**Lecture de Fichier et Ecriture**
+
+- **livres.csv** : Stocke les informations sur les livres. Chaque ligne du fichier représente un livre avec le format suivant : `ID,Titre,Auteur,Année,Disponibilité`.
+- **emprunts.csv** : Stocke les informations sur les emprunts. Chaque ligne du fichier représente un emprunt avec le format suivant : `ID_Emprunt,ID_Livre,Titre,Lecteur,Date_Emprunt,Date_Retour`.
 
 ## Utilisation
 
@@ -29,6 +33,7 @@ Ce script Python permet de gérer une bibliothèque en offrant des fonctionnalit
    - Tapez `6` pour afficher tous les emprunts en cours.
    - Tapez `7` pour quitter le programme.
 
+---
 ## Exemples
 
 ### Ajouter un livre
@@ -132,7 +137,7 @@ Date emprunt: 2025-12-04
 Date retour: 2026-02-18
 ```
 
-### Redonner un Livre
+### Retourne run Livre
 ```
 === MENU PRINCIPAL ===
 1. Ajouter un livre
