@@ -1,8 +1,8 @@
 ===========================================
-## ANALYSE DES LOGS D'UTILISATEURS (CSV) - README
+## ANALYSE DES LOGS D'UTILISATEURS (CSV) 
 ===========================================
 
-## 1. DESCRIPTION
+### 1. DESCRIPTION
 --------------
 Ce script Python analyse les logs de connexions utilisateurs stockés dans un fichier CSV.
 Il permet de :
@@ -105,6 +105,7 @@ bob,4
 
 
 ## 6. EXEMPLE D'EXÉCUTION
+```
 ----------------------
 === ANALYSE DES LOGS D'UTILISATEURS (CSV) ===
 
@@ -124,7 +125,7 @@ Utilisateur     | Accès
 bob             | 4
 
 Les résultats ont été sauvegardés dans resultats_analyse_20231115_143022.csv
-
+```
 
 ## 7. NOTES IMPORTANTES
 --------------------
