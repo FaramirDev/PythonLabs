@@ -6,8 +6,8 @@
 ## 5. Save version Clean
 
 ## DATA : 
-path_data_brut = "01_TP_Data_MiniETL/data/in/data_employer_brut.csv"
-path_data_clean = "01_TP_Data_MiniETL/data/out/data_employer_clean.csv"
+path_data_brut = "01_TP_Data_MiniETL/data_IN/data_employer_brut.csv"
+path_data_clean = "01_TP_Data_MiniETL/data_Output/data_employer_clean.csv"
 
 with open(path_data_brut, "r") as f:
     readlines = f.readlines()

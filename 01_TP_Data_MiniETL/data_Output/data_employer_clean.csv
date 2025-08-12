@@ -1,0 +1,6 @@
+['id', 'nom', 'age', 'departement', 'poste']
+['1', 'Jean Dupont', '30', 'Informatique', 'Ingénieur']
+['2', 'Marie Martin', '25', 'Marketing', 'Analyste']
+['4', 'Lucie Bernard', '35', 'Ressources Humaines', 'Manager']
+['5', 'Paul Leroy', '29', 'Finance', 'Comptable']
+['7', 'Sophie Moreau', '40', 'Informatique', 'Développeur']
