@@ -17,7 +17,7 @@ Réalisés dans le cadre de l’apprentissage de Python appliqué et des envies 
 - `03_TP_NettoyerListeFichier` : Entrainement Clean de Data
 - `04_TP_Jeux_Devinette` : Petit Jeux de Devinette avec le Module Random
 - `05_TP_Analyseur_Texte` : Analyser une Entré de chaine de Characteres et fournir un Bilan
-- `06_TP_Analyse_de_DATA_Ventes` : Analyse Data vente, puis Transforme, Mean, Max, Min, etc. -> Bilan
+- `06_TP_Creation_DataVente_Random` : Creation d'une Data Random basé sur Catalogue
 - `07_TP_Classe_Etudiant` : Syteme de Classe Etudiant, Data Manipulation avec Entree
 - `08_TP_CreationRandomdeDataVente` : Creation d'une Data Random ciblé sur la vente
 - `09_TP_Simulation_Banque_Simple` : Systeme Bancaire avec Actions
