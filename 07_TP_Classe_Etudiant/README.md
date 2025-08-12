@@ -42,7 +42,7 @@ Entré dans le Programme de la Classe :
 
 ![resultat](images/capture_start_systeme.png)
 
-
+---
 - On créé un super nouvelle Eleve du nom de Faramir
 avec une super moyenne evidemment 
 
