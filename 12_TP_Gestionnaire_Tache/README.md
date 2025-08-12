@@ -22,7 +22,7 @@ Ce script Python est un outil simple pour gérer une liste de tâches. Il permet
 
 ## Exemple
 
-```plaintext
+```
 Que voulez-vous faire ?
 Pour ajouter une tâche, tapez 1
 Pour supprimer une tâche, tapez 2

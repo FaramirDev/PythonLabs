@@ -20,7 +20,7 @@ Ce script Python est un outil simple pour gérer une liste de courses. Il permet
 
 ## Exemple
 
-```plaintext
+```
 Quelle action voulez-vous faire ?
 Voulez-vous ajouter un article ? Tapez 1 !
 Voulez-vous enlever un article ? Tapez 2 !
