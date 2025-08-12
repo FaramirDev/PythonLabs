@@ -2,12 +2,13 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
 from datetime import datetime
+import calendar
 import os
 
 ## == DATA BASE == ## 
 all_data_stock = {}
 
-path_save_data = "data/data_stock.txt"
+path_save_data = "16_APP_Systeme_Gestion_de_Stock/data/in/data_stock.txt"
 path_save = path_save_data
 list_path_data = [path_save_data]
 
@@ -602,7 +603,7 @@ root.configure(bg=couleur_fond)
 vcmd = root.register(validate_input)
 
 ## Def taille
-root.geometry("545x600")
+root.geometry("630x600")
 root.resizable(False, False)
 
 si_path_no_exist()

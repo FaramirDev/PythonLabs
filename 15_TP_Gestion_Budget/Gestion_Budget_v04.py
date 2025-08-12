@@ -1,6 +1,5 @@
 import os, random as rd, re
 
-
 ###### SET UP LIST DATA
 list_id = []
 data_all_transaction = {}
