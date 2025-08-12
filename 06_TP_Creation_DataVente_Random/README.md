@@ -1,4 +1,4 @@
-# TP 06 – Analyse d'un Jeu de Donnée de Ventes  📊
+# TP 06 – Creation d'un Jeu de Donnée de Ventes  📊
 
 Objectif du TP : 
 - Manipulation de Dictionnaire
