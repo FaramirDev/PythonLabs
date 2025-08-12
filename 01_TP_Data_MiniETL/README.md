@@ -1,49 +1,61 @@
-# TP 01 – Nettoyage Jeux de Données 🧹📊
+### Mini ETL sans Pandas
 
-Ce TP a pour objectif d'analyser et de nettoyer :
-- Lire un fichier CSV avec des valeurs Corrompus
-- Filtrer les Données du CSV
-- Nettoyer le jeu de données CSV 
-- Transformer en un nouveau jeu de Donnée CSV
-- Enregistrer le Nouveau fichier CSV 
+Ce script Python est un exemple simple de processus ETL (Extract, Transform, Load) qui lit un fichier CSV brut, nettoie et filtre les données, puis sauvegarde les données nettoyées dans un nouveau fichier CSV.
+Fonctionnalités
 
----
+**Extraction** : 
+- Lit les données depuis un fichier CSV brut.
 
-Ici le Script à pour Entré un fichier CSV avec différents données Brut : 
-- Prénom, age, département, et poste de Travail. 
+**Transformation et Nettoyage :**
+- Filtre les lignes qui ont exactement 5 colonnes non vides.
+- Vérifie que la colonne d'âge est un entier valide.
 
-Le fichier est brut est comporte des Erreurs avec des valeurs non valides ou manquantes. 
 
-Le script vient Analyser, et ne récupère que les données comportant tous les élements Valide de 5 Valeurs. 
-
-- Puis on vient Enregistrer ce Nouveau CSV qui est nettoyé et pret à recevoir une Analyse juste.
+**Chargement** : 
+- Sauvegarde les données nettoyées dans un nouveau fichier CSV.
 
 ---
 
-## 📁 Structure
-01_TP_Data/
-- main.py # Script principal
-- data/in # Fichiers d’entrée CSV
-- data/out # Fichier CSV Cleaner 
-- images/ # Images pour le README
+## Structure des Données
 
----
+**Fichier d'entrée (data_employer_brut.csv)**
+Le fichier d'entrée doit être un fichier CSV avec 5 colonnes. 
+- Voici un exemple de format attendu :
 
-## 📊 Données utilisées 
+```
+id,nom,age,departement,poste
+1,Jean Dupont,30,Informatique,Ingénieur
+2,Marie Martin,25,Marketing,Analyste
+3,Pierre Durand,,Informatique,Technicien
+4,Lucie Bernard,35,Ressources Humaines,Manager
+5,Paul Leroy,29,Finance,Comptable
+6,Incomplete,Line,,,
+7,Sophie Moreau,40,Informatique,Développeur
+```
 
-- Fichier : data/in/data_employer_brut.csv
-avec pour data : ID, Nom, Age, Département, Poste
+**Fichier de sortie (data_employer_clean.csv)**
+Le fichier de sortie contiendra uniquement les lignes qui ont passé les critères de filtrage et de nettoyage. 
+- Voici un exemple de ce que pourrait contenir le fichier de sortie :
+
+```
+[['id', 'nom', 'age', 'departement', 'poste'],
+ ['1', 'Jean Dupont', '30', 'Informatique', 'Ingénieur'],
+ ['2', 'Marie Martin', '25', 'Marketing', 'Analyste'],
+ ['4', 'Lucie Bernard', '35', 'Ressources Humaines', 'Manager'],
+ ['5', 'Paul Leroy', '29', 'Finance', 'Comptable'],
+ ['7', 'Sophie Moreau', '40', 'Informatique', 'Développeur']]
+
+```
+
+## Utilisation
+
+**Préparation des données :**
+- Assurez-vous que le fichier data_employer_brut.csv est placé dans le dossier 01_TP_Data_MiniETL/data_IN/.
 
 
-- Image du Fichier CSV d'entrée : 
+**Exécuter le script :** 
+-Lancez le script dans un environnement Python.
 
-![Data Brut](images/capture_data_brut.png)
 
-- Image du Fichier CSV Cleanner en Sortie : 
-
-![Data Clean](images/capture_data_clean.png)
-
----
-
-## 📄 Licence
-- Ce TP est libre d’utilisation à des fins pédagogiques.
+**Résultat :**
+-Le script va générer un fichier data_employer_clean.csv dans le dossier 01_TP_Data_MiniETL/data_Output/ contenant les données nettoyées.
