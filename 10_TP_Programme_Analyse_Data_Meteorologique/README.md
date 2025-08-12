@@ -29,7 +29,7 @@ Ce script Python permet de générer des données météorologiques aléatoires 
 
 ## Exemple
 
-```plaintext
+```
 Bonjour, bienvenue sur notre service de Data Analyse des Données Météorologiques.
 Que voulez-vous faire ?
 

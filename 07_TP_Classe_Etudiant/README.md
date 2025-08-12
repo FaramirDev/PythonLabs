@@ -22,7 +22,7 @@ Ce script Python est un système simple de gestion de classe. Il permet aux util
 
 ## Exemple
 
-```plaintext
+```
 -------------------
 *** SYSTÈME DE CLASSE ***
 
