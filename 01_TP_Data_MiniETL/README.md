@@ -35,10 +35,12 @@ Le script vient Analyser, et ne récupère que les données comportant tous les 
 avec pour data : ID, Nom, Age, Département, Poste
 
 
-Image du Fichier CSV d'entrée : 
+- Image du Fichier CSV d'entrée : 
+
 ![Data Brut](images/capture_data_brut.png)
 
-Image du Fichier CSV Cleanner en Sortie : 
+- Image du Fichier CSV Cleanner en Sortie : 
+
 ![Data Clean](images/capture_data_clean.png)
 
 ---
