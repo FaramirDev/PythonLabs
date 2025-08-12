@@ -38,12 +38,12 @@ Le fichier de sortie contiendra uniquement les lignes qui ont passé les critèr
 - Voici un exemple de ce que pourrait contenir le fichier de sortie :
 
 ```
-[['id', 'nom', 'age', 'departement', 'poste'],
- ['1', 'Jean Dupont', '30', 'Informatique', 'Ingénieur'],
- ['2', 'Marie Martin', '25', 'Marketing', 'Analyste'],
- ['4', 'Lucie Bernard', '35', 'Ressources Humaines', 'Manager'],
- ['5', 'Paul Leroy', '29', 'Finance', 'Comptable'],
- ['7', 'Sophie Moreau', '40', 'Informatique', 'Développeur']]
+id,nom,age,departement,poste
+1,Jean Dupont,30,Informatique,Ingénieur
+2,Marie Martin,25,Marketing,Analyste
+4,Lucie Bernard,35,Ressources Humaines,Manager
+5,Paul Leroy,29,Finance,Comptable
+7,Sophie Moreau,40,Informatique,Développeur
 
 ```
 
@@ -54,8 +54,8 @@ Le fichier de sortie contiendra uniquement les lignes qui ont passé les critèr
 
 
 **Exécuter le script :** 
--Lancez le script dans un environnement Python.
+- Lancez le script dans un environnement Python.
 
 
 **Résultat :**
--Le script va générer un fichier data_employer_clean.csv dans le dossier 01_TP_Data_MiniETL/data_Output/ contenant les données nettoyées.
+- Le script va générer un fichier data_employer_clean.csv dans le dossier 01_TP_Data_MiniETL/data_Output/ contenant les données nettoyées.
