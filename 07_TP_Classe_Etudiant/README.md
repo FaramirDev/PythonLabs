@@ -3,7 +3,7 @@
 Objectif du TP : 
 - Création d'un Systeme de Classe d'Etudiant avec DATA et Manipulation
 
-- Fonctionnalité à Intégrer : 
+Fonctionnalité à Intégrer : 
 - Ajouter un Nouvelle étudiant
 - Supprimer un Etudiant Existant
 - Modification de la Moyenne
@@ -20,9 +20,9 @@ Objectif du TP :
 ---
 
 Mise en Place d'une Gestion d'Erreur dans les Entrées : 
-    - Moyenne Comprise entre 0 et 20
-    - Suppression SI dans Nom présent dans la Data Classe
-    - Input en fonction des données en String, int, Float
+- Moyenne Comprise entre 0 et 20
+- Suppression SI dans Nom présent dans la Data Classe
+- Input en fonction des données en String, int, Float
 
 
 ---
@@ -43,16 +43,16 @@ Entré dans le Programme de la Classe :
 ![resultat](images/capture_start_systeme.png)
 
 
-- 1. On créé un super nouvelle Eleve du nom de Faramir
+- On créé un super nouvelle Eleve du nom de Faramir
 avec une super moyenne evidemment 
 
-- 2. Puis on test de la modifié en se trompant de nom "Far"
+- Puis on test de la modifié en se trompant de nom "Far"
 Evidemment ca ne fonctionne pas.. 
 
-- 3. Et si on réessayé en mettant le nom de Faramir voyons...
+- Et si on réessayé en mettant le nom de Faramir voyons...
 Biensur que ca fonctionne 
 
-- 4. On modifie donc ca moyenne en rajoutant un petit peu de chiffre.. 
+- On modifie donc ca moyenne en rajoutant un petit peu de chiffre.. 
 
 ![resultat](images/capture_systeme_01.png)
 
