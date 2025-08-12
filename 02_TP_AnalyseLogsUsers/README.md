@@ -1,8 +1,8 @@
 ===========================================
-## ANALYSE DES LOGS D'UTILISATEURS (CSV) 
-===========================================
+## ANALYSE DES LOGS D'UTILISATEURS A PARTIR D'UN CSV
 
-### 1. DESCRIPTION
+---
+## 1. DESCRIPTION
 --------------
 Ce script Python analyse les logs de connexions utilisateurs stockés dans un fichier CSV.
 Il permet de :
@@ -42,7 +42,6 @@ alice
 faramir
 alice
 faramir
-
 ```
 
 ------------------------
@@ -128,7 +127,7 @@ Les résultats ont été sauvegardés dans resultats_analyse_20231115_143022.csv
 ```
 
 ## 7. NOTES IMPORTANTES
---------------------
+
 - Le script suppose que les noms d'utilisateurs sont dans la première colonne du CSV
 - Pour de très grands jeux de données, envisagez d'utiliser pandas pour de meilleures performances
 - Les fichiers de sortie sont automatiquement timestampés pour éviter les écrasements
