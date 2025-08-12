@@ -1,66 +1,54 @@
-# TP 07 – Systeme Classe Etudiant  📊
+# Système de Gestion de Classe
 
-Objectif du TP : 
-- Création d'un Systeme de Classe d'Etudiant avec DATA et Manipulation
+Ce script Python est un système simple de gestion de classe. Il permet aux utilisateurs d'ajouter des élèves, de supprimer des élèves, de modifier les moyennes des élèves, et d'afficher la liste complète des élèves.
 
-Fonctionnalité à Intégrer : 
-- Ajouter un Nouvelle étudiant
-- Supprimer un Etudiant Existant
-- Modification de la Moyenne
-- Affichage de tous les Etudiants de la Classe renseigné
-- Quitter le Programme
+## Fonctionnalités
 
+- **Ajouter un élève** : Ajoute un nouvel élève à la liste avec son nom, son âge et sa moyenne.
+- **Supprimer un élève** : Supprime un élève existant de la liste.
+- **Modifier la moyenne d'un élève** : Met à jour la moyenne d'un élève existant.
+- **Afficher la classe entière** : Affiche la liste complète des élèves avec leurs détails.
+- **Quitter le programme** : Permet de quitter le programme proprement.
 
-- Donnée Relatif à l'étudiant : 
-    - NOM
-    - AGE
-    - MOYENNE
+## Utilisation
 
+1. **Exécuter le script** : Lancez le script dans un environnement Python.
+2. **Choisir une action** : Une fois le script lancé, vous pouvez choisir parmi les actions suivantes :
+   - Tapez `1` pour ajouter un nouvel élève.
+   - Tapez `2` pour supprimer un élève existant.
+   - Tapez `3` pour modifier la moyenne d'un élève.
+   - Tapez `4` pour afficher la classe entière.
+   - Tapez `5` pour quitter le programme.
 
----
+## Exemple
 
-Mise en Place d'une Gestion d'Erreur dans les Entrées : 
-- Moyenne Comprise entre 0 et 20
-- Suppression SI dans Nom présent dans la Data Classe
-- Input en fonction des données en String, int, Float
+```plaintext
+-------------------
+*** SYSTÈME DE CLASSE ***
 
+Bienvenue sur votre service de classe en ligne
 
----
+Que voulez-vous faire ?
+Pour ajouter un nouvel élève, tapez 1
+Pour supprimer un élève existant, tapez 2
+Pour modifier la moyenne d'un élève, tapez 3
+Pour afficher la classe entière, tapez 4
+Pour quitter le programme, tapez 5
 
-## 📁 Structure
+Tapez ici --> 1
+Quel est le nom de l'élève ? Faramir
+Quel âge a-t-il ? 30
+Quel est sa moyenne ? 16.5
 
-02_TP_Data/
-- main_classe.py # Script principal
-- images/ # Images pour le README
+Que voulez-vous faire ?
+Pour ajouter un nouvel élève, tapez 1
+Pour supprimer un élève existant, tapez 2
+Pour modifier la moyenne d'un élève, tapez 3
+Pour afficher la classe entière, tapez 4
+Pour quitter le programme, tapez 5
 
+Tapez ici --> 4
 
----
-
-## Capture du Programme 
-
-Entré dans le Programme de la Classe : 
-
-![resultat](images/capture_start_systeme.png)
-
----
-- On créé un super nouvelle Eleve du nom de Faramir
-avec une super moyenne evidemment 
-
-- Puis on test de la modifié en se trompant de nom "Far"
-Evidemment ca ne fonctionne pas.. 
-
-- Et si on réessayé en mettant le nom de Faramir voyons...
-Biensur que ca fonctionne 
-
-- On modifie donc ca moyenne en rajoutant un petit peu de chiffre.. 
-
-![resultat](images/capture_systeme_01.png)
-
-![resultat](images/capture_systeme_02.png)
-
-
-
----
-
-## 📄 Licence
-- Ce TP est libre d’utilisation à des fins pédagogiques.
+Le nom de l'étudiant est Faramir
+Son âge est de 30 ans
+Sa moyenne est de 16.5
