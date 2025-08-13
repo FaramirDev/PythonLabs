@@ -2,17 +2,16 @@ from tkinter import *
 from tkinter import ttk
 from tkinter import filedialog
 from datetime import datetime
-import calendar
 import os
 
 ## == DATA BASE == ## 
 all_data_stock = {}
 
-path_save_data = "16_APP_Systeme_Gestion_de_Stock/data/in/data_stock.txt"
+path_save_data = "16_APP_Systeme_Gestion_de_Stock/data/data_stock.csv"
 path_save = path_save_data
 list_path_data = [path_save_data]
 
-nom_fichier = "data_stock.txt"
+nom_fichier = "data_stock.csv"
 
 couleur_fond = '#1d1f20'
 couleur_clair = "#dae0f0"
@@ -218,7 +217,7 @@ def affiche_entre_sup():
 def ouvrir_fenetre_choix_modify():
     fenetre_modify_choix = Toplevel(root)
     fenetre_modify_choix.title("Fenetre Modify")
-    fenetre_modify_choix.geometry("400x600")
+    fenetre_modify_choix.geometry("600x600")
     fenetre_modify_choix.configure(bg=couleur_fond)
     fenetre_modify_choix.resizable(False, False)
 
@@ -263,13 +262,12 @@ def ouvrir_fenetre_choix_modify():
     checkbutton_choix_prix = Checkbutton(fenetre_modify_choix, text="Modifé Prix :", variable=choix3_prix, bg=couleur_fond, fg=couleur_clair, selectcolor=couleur_fond, justify=LEFT)
     checkbutton_choix_prix.grid(row=5,column=1, sticky=W, pady=5)
 
-    checkbutton_choix_date = Checkbutton(fenetre_modify_choix, text="Modifé Date :", variable=choix4_date, bg=couleur_fond, fg=couleur_clair, selectcolor=couleur_fond, justify=LEFT)
+    checkbutton_choix_date = Checkbutton(fenetre_modify_choix, text="Modifé Date (XXXX-MM-DD):", variable=choix4_date, bg=couleur_fond, fg=couleur_clair, selectcolor=couleur_fond, justify=LEFT)
     checkbutton_choix_date.grid(row=6,column=1, sticky=W, pady=5)
 
+    entry_date_modify = Entry(fenetre_modify_choix, width=20, bg= couleur_entree, validatecommand=(vcmd, '%P'), )
+    entry_date_modify.grid(row=6,column=2, sticky=NSEW, pady=10)
 
-    def afficher_date():
-        date = cal.get_date()
-        label_date.config(text=date)
 
 
     def modifier_article(choix1_titre,choix2_quantite, choix3_prix, choix4_date, id, nom, quantite, prix, date):
@@ -279,33 +277,37 @@ def ouvrir_fenetre_choix_modify():
             list_nom.append(item[1])
 
         ## date
-        date_seperate = date.split('-')
-        annee_solo = int(date_seperate[0])
-        month_solo = int(date_seperate[1])
-        day_solo =  int(date_seperate[2])
+        def validate_date(data_date):
+            date_seperate = data_date.split('-')
+            annee_solo = int(date_seperate[0])
+            month_solo = int(date_seperate[1])
+            day_solo =  int(date_seperate[2])
 
-        aujourdhui = datetime.today()
-        annee = aujourdhui.year
-        mois = aujourdhui.month
+            aujourdhui = datetime.today()
+            annee = aujourdhui.year
+            mois = aujourdhui.month
 
-        date_aujourdhui_str = aujourdhui.strftime("%Y-%m-%d")
-        date_aujourdui_split = date_aujourdhui_str.split('-')
-        jours_actuel = int(date_aujourdui_split[2])
+            date_aujourdhui_str = aujourdhui.strftime("%Y-%m-%d")
+            date_aujourdui_split = date_aujourdhui_str.split('-')
+            jours_actuel = int(date_aujourdui_split[2])
 
-        validation = False
-
-        if annee_solo >= annee and month_solo >= mois and day_solo >= jours_actuel:
-            validation = True
-
-        elif annee_solo >= annee and month_solo > mois:
-            validation = True
-        
-        elif annee_solo > annee:
-            validation = True
-        
-        else:
             validation = False
-             
+
+            if annee_solo >= annee and month_solo >= mois and day_solo >= jours_actuel:
+                validation = True
+
+            elif annee_solo >= annee and month_solo > mois:
+                validation = True
+        
+            elif annee_solo > annee:
+                validation = True
+        
+            else:
+                validation = False
+
+            return validation
+
+        
 
         id = int(id) - 1
 
@@ -318,10 +320,11 @@ def ouvrir_fenetre_choix_modify():
         tweak_quantite = int(quantite)
         tweak_prix = int(prix)
 
+        nouvelle_date = True
 
         for data in elements:
             recup_index = elements.index(data)
-            if recup_index == id and validation == True:  
+            if recup_index == id:  
                 if choix1_titre and nom not in list_nom and nom != "":               
                     new_nom = str(nom)
                     data[1] = new_nom
@@ -334,12 +337,16 @@ def ouvrir_fenetre_choix_modify():
                     new_prix = str(prix)
                     data[3] = new_prix
 
-                if choix4_date and validation == True:           
-                    new_date = str(date)
-                    data[4] = new_date 
+                if choix4_date: 
+                    validation = validate_date(date) 
+                    nouvelle_date = validation
+                    if validation == True:         
+                        new_date = str(date)
+                        data[4] = new_date 
                 
                 affiche_all()
                 label_error_mod.config(text="Modification Réussi", fg="#2fef3e")
+
 
             elif nom in list_nom and nom != "":
                 label_error_mod.config(text="Error : Nom utilisé ou non reconnu", fg = "#ef2f2f")
@@ -347,7 +354,7 @@ def ouvrir_fenetre_choix_modify():
             elif nom == "" and choix2_quantite == False and choix4_date == False and choix3_prix == False:
                 label_error_mod.config(text="Error : Veuillez Entrer un Nom", fg = "#ef2f2f")
 
-            elif choix4_date == True and validation == False:
+            elif choix4_date == True and nouvelle_date == False:
                 label_error_mod.config(text="Date Non Valide.", fg = "#ef2f2f")
 
             elif tweak_quantite == 0 and choix4_date == False and choix3_prix == False and choix1_titre == False:
@@ -357,14 +364,6 @@ def ouvrir_fenetre_choix_modify():
              label_error_mod.config(text="Entrez un Prix valide.", fg = "#ef2f2f")
 
 
-    cal = Calendar(fenetre_modify_choix, selectmode="day", date_pattern="yyyy-mm-dd")
-    cal.place(x=110, y=285)
-
-    bouton_valider_date = Button(fenetre_modify_choix, text="Select Date", command=afficher_date, bg= "#4c4f4a", fg = couleur_clair)
-    bouton_valider_date.place(x=110, y=475)
-
-    label_date = Label(fenetre_modify_choix, text="", bg= "#4c4f4a", fg = couleur_clair)
-    label_date.grid(row=6,column=2, sticky=NSEW, pady=5)
 
     label_error_mod = Label(fenetre_modify_choix, text="", bg= couleur_fond, fg = "#ef2f2f")
     label_error_mod.place(x=10, y=575)
@@ -379,9 +378,9 @@ def ouvrir_fenetre_choix_modify():
         entry_new_nom.get(),
         entry_new_quantite.get(),
         entry_new_prix.get(),
-        cal.get_date(),), bg= "#46b143", fg=couleur_clair, font=('Arial', 11))
+        entry_date_modify.get()),bg= "#48b551", fg = couleur_clair)
     
-    bouton_valider.place(x=225, y=500)
+    bouton_valider.place(x=200, y=350)
 
 def ouvrir_fenetre_ajout():
     fenetre_ajout_article = Toplevel(root)
@@ -411,10 +410,6 @@ def ouvrir_fenetre_ajout():
 
     entry_prix = Entry(fenetre_ajout_article, width=20, bg= couleur_entree, validate="key", validatecommand=(vcmd, '%P'))
     entry_prix.grid(row=4,column=2, sticky=NSEW, pady=5)
-
-    def afficher_date():
-        date = cal.get_date()
-        label_date.config(text=date)
 
 
     def valider_ajout(nom, quantite, prix, date):
@@ -481,18 +476,14 @@ def ouvrir_fenetre_ajout():
             label_error.config(text="Error : Entrez une quantite ou prix valide" , fg = "#ef2f2f")
 
 
-    cal = Calendar(fenetre_ajout_article, selectmode="day", date_pattern="yyyy-mm-dd")
-    cal.place(x=220, y=45)
 
-    bouton_valider_date = Button(fenetre_ajout_article, text="Select Date", command=afficher_date, bg= "#4c4f4a", fg = couleur_clair)
-    bouton_valider_date.place(x=220, y=235)
 
-    label_date_titre = Label(fenetre_ajout_article,text= "Date :",fg=couleur_clair,bg = couleur_fond,font=('Arial', 8), )
+    label_date_titre = Label(fenetre_ajout_article,text= "Date (XXXX-MM-DD):",fg=couleur_clair,bg = couleur_fond,font=('Arial', 8), )
     label_date_titre.grid(row=5,column=1, sticky=W, pady=5, padx= 10)
 
-    label_date = Label(fenetre_ajout_article, text="", bg= "#4c4f4a", fg = couleur_clair)
-    label_date.grid(row=5,column=2, sticky=NSEW, pady=5,)
-
+    entry_date_ajout= Entry(fenetre_ajout_article, width=20, bg= couleur_entree, validatecommand=(vcmd, '%P'), )
+    entry_date_ajout.grid(row=5,column=2, sticky=NSEW, pady=10)
+    
     label_error = Label(fenetre_ajout_article, text="", bg= couleur_fond, fg = "#ef2f2f")
     label_error.place(x=10, y=375)
 
@@ -500,7 +491,7 @@ def ouvrir_fenetre_ajout():
     bouton_valider = Button(fenetre_ajout_article, text="Ajouter Article", command=lambda: valider_ajout( 
         entry_nom.get(),
         entry_quantite.get(), entry_prix.get(),
-        cal.get_date(),), bg= "#46b143", fg=couleur_clair, font=('Arial', 10))
+        entry_date_ajout.get(),), bg= "#46b143", fg=couleur_clair, font=('Arial', 10))
     
     bouton_valider.place(x=320, y=325, width= 150 )
 
