@@ -1,4 +1,4 @@
-### Mini ETL sans Pandas
+# Mini ETL sans Pandas
 
 Ce script Python est un exemple simple de processus ETL (Extract, Transform, Load) qui lit un fichier CSV brut, nettoie et filtre les données, puis sauvegarde les données nettoyées dans un nouveau fichier CSV.
 Fonctionnalités
