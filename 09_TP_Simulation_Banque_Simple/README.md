@@ -27,8 +27,6 @@ Data Name présent :
 
 ## Exemple
 
-
-
 ```
 Tapez votre nom s'il vous plaît ou 4 pour quitter
 Tapez ici --> bea

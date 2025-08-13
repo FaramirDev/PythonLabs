@@ -17,6 +17,7 @@ Le dépôt est organisé en plusieurs projets indépendants, chacun dans son pro
 
 ### Systèmes de Gestion avec Manipulation de Données
 - **07_TP_Classe_Etudiant** : Système de gestion de classe et d'étudiants
+- **08_TP_Gestionnaire_de_Reservation** : Système de gestion de Reservation
 - **09_TP_Simulation_Banque_Simple** : Simulation d'un système bancaire simple
 - **11_TP_Gestionnaire_Liste_Course** : Gestionnaire de liste de courses
 - **12_TP_Gestionnaire_Tache** : Gestionnaire de tâches
