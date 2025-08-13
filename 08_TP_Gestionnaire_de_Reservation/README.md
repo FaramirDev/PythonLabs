@@ -37,9 +37,9 @@ Salle_B,2025-01-15,09:00,Alexis
 - Aucune bibliothèque externe requise
 
 **Exécution :**
-1. Enregistrez le script dans un fichier nommé gestion_reservations.py
+1. Enregistrez le script dans un fichier nommé main_reservation.py
 2. Exécutez avec Python :
-   python gestion_reservations.py
+   python main_reservation.py
 3. Le fichier de données sera créé automatiquement s'il n'existe pas
 
 5. UTILISATION
