@@ -20,6 +20,4 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Dossiers perso à ne pas pousser
-data/
-outputs/
+

@@ -1,0 +1,17 @@
+Statistiques d'accès aux logs
+
+Tous les utilisateurs
+Utilisateur,Nombre d'accès
+faramir,5
+alice,4
+bob,4
+charlie,1
+david,1
+farmair,1
+dabid,1
+
+Utilisateurs actifs (plus de 3 accès)
+Utilisateur,Nombre d'accès
+faramir,5
+alice,4
+bob,4
