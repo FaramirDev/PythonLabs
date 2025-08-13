@@ -60,7 +60,7 @@ notes.txt
 - Placez-le dans le même répertoire que le script
 
 **Etape 3.**  
--Exécutez le script :
+- Exécutez le script :
    python nettoyage_csv.py
 
 **Etape 4.**  
