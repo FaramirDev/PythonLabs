@@ -1,8 +1,9 @@
 ===========================================
 ## ANALYSE DES LOGS D'UTILISATEURS A PARTIR D'UN CSV
+===========================================
 
----
-## 1. DESCRIPTION
+--------------
+**1. DESCRIPTION**
 --------------
 Ce script Python analyse les logs de connexions utilisateurs stockés dans un fichier CSV.
 Il permet de :
