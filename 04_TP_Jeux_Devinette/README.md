@@ -4,13 +4,13 @@
 
 ---
 
-## 1. DESCRIPTION
+**1. DESCRIPTION**
 --------------
 Ce script Python implémente un simple jeu de devinette où le joueur doit
 trouver un nombre secret compris entre 1 et 100. Le jeu donne des indices
 ("plus grand" ou "plus petit") à chaque essai et compte le nombre de tentatives.
 
-## 2. FONCTIONNALITÉS
+**2. FONCTIONNALITÉS**
 -------------------
 - Génération aléatoire d'un nombre entre 1 et 100
 - Système d'indices pour guider le joueur
@@ -18,7 +18,7 @@ trouver un nombre secret compris entre 1 et 100. Le jeu donne des indices
 - Messages de félicitations personnalisés
 - Interface simple et intuitive
 
-## 3. COMMENT JOUER
+**3. COMMENT JOUER**
 -----------------
 **Etape 1.** Exécutez le script avec Python :
    python devinette.py
@@ -33,7 +33,7 @@ trouver un nombre secret compris entre 1 et 100. Le jeu donne des indices
 
 **Etape 5** À la fin, le jeu vous félicitera et vous indiquera le nombre d'essais nécessaires
 
-## 4. EXEMPLE DE PARTIE
+**4. EXEMPLE DE PARTIE**
 ```
 --------------------
 Devinez mon nombre compris entre 1 et 100 ! Bonne chance !!!
@@ -51,14 +51,14 @@ Ouiiii Bravooooo !! Comment tu gères ! Tu as trouvé le bon nombre, et oui c'é
 Tu as réussi en 4 essais !!
 ```
 
-## 5. PERSONNALISATION
+**5. PERSONNALISATION**
 -------------------
 Vous pouvez facilement modifier ces paramètres dans le code :
 - La plage de nombres en changeant les valeurs de min et max
   (actuellement min=1, max=100)
 - Les messages de feedback pour les rendre plus personnalisés
 
-6. AMÉLIORATIONS POSSIBLES
+**6. AMÉLIORATIONS POSSIBLES**
 ---------------------------
 - Ajouter un système de scores
 - Implémenter un mode difficile avec une plage plus large
@@ -68,25 +68,25 @@ Vous pouvez facilement modifier ces paramètres dans le code :
 - Implémenter un système de vies limitées
 - Ajouter des indices supplémentaires après un certain nombre d'essais
 
-## 7. NOTES TECHNIQUES
+**7. NOTES TECHNIQUES**
 --------------------
 - Utilise le module random pour générer le nombre secret
 - Gère les entrées utilisateur avec validation basique
 - Compte précisément le nombre d'essais
 - Affiche des messages encourageants
 
-## 8. EXIGENCES SYSTÈME
+**8. EXIGENCES SYSTÈME**
 ---------------------
 - Python 3.x
 - Aucune bibliothèque externe requise
 
-9. INSTALLATION
+**9. INSTALLATION**
 ---------------
 1. Enregistrez le code dans un fichier nommé main_play.py
 2. Exécutez simplement avec Python :
    python main_play.py
 
-10. CRÉDITS
+**10. CRÉDITS**
 -----------
 Jeu de devinette classique implémenté en Python par Faramir.
 
