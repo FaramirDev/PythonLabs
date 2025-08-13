@@ -23,8 +23,9 @@ Ce script Python nettoie un fichier CSV contenant une liste de noms de fichiers 
 
 **3. STRUCTURE DES FICHIERS**
 -------------------------
-```
+
 **Fichier d'entrée (fichiers_bruts.csv) :**
+```
 log.txt
 ""
 log.txt
@@ -53,17 +54,17 @@ notes.txt
 **5. INSTALLATION ET UTILISATION**
 -------------------------------
 **Etape 1.** 
-Créez un fichier 'fichiers_bruts.csv' avec vos données (un nom de fichier par ligne)
+- Créez un fichier 'fichiers_bruts.csv' avec vos données (un nom de fichier par ligne)
 
 **Etape 2.**  
-Placez-le dans le même répertoire que le script
+- Placez-le dans le même répertoire que le script
 
 **Etape 3.**  
-Exécutez le script :
+-Exécutez le script :
    python nettoyage_csv.py
 
 **Etape 4.**  
-Les résultats seront :
+- Les résultats seront :
    - Affichés à l'écran
    - Enregistrés dans 'fichiers_nettoyes.csv'
 

@@ -20,18 +20,23 @@ trouver un nombre secret compris entre 1 et 100. Le jeu donne des indices
 
 **3. COMMENT JOUER**
 -----------------
-**Etape 1.** Exécutez le script avec Python :
+**Etape 1 :** 
+Exécutez le script avec Python :
    python devinette.py
 
-**Etape 2** Le jeu vous demandera de deviner un nombre entre 1 et 100
+**Etape 2 :** 
+Le jeu vous demandera de deviner un nombre entre 1 et 100
 
-**Etape 3.**3. À chaque essai, le jeu vous indiquera si le nombre secret est :
+**Etape 3 :** 
+À chaque essai, le jeu vous indiquera si le nombre secret est :
    - Plus grand que votre proposition
    - Plus petit que votre proposition
 
-**Etape 4.** Continuez jusqu'à trouver le bon nombre
+**Etape 4 :** 
+Continuez jusqu'à trouver le bon nombre
 
-**Etape 5** À la fin, le jeu vous félicitera et vous indiquera le nombre d'essais nécessaires
+**Etape 5 :** 
+À la fin, le jeu vous félicitera et vous indiquera le nombre d'essais nécessaires
 
 **4. EXEMPLE DE PARTIE**
 ```
