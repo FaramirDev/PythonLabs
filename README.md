@@ -33,7 +33,7 @@ Le dépôt est organisé en plusieurs projets indépendants, chacun dans son pro
 ## Structure d'un projet
 
 Chaque projet suit une structure standardisée :
-
+```
 [Nom_Du_Projet]/
 ├── main.py (ou script principal)
 ├── README.md (documentation spécifique)
@@ -41,7 +41,7 @@ Chaque projet suit une structure standardisée :
 │   ├── input/ (données d'entrée)
 │   └── output/ (données de sortie)
 └── assets/ (fichiers complémentaires si nécessaire)
-
+```
 ## Utilisation
 
 ### Prérequis
