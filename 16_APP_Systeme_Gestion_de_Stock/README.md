@@ -73,7 +73,7 @@ Cette application de gestion de stock développée en Python avec Tkinter permet
 ## Interface Utilisateur
 
 ### Fenêtre principale
-![Interface principale](16_APP_Systeme_Gestion_de_Stock/images/capture_start_programme.png)
+![Interface principale](images/capture_start_programme.png)
 
 1. **Barre de titre** : "Gestion de Stock"
 2. **Boutons principaux** :
@@ -89,11 +89,11 @@ Cette application de gestion de stock développée en Python avec Tkinter permet
    - Statut de chargement
    - Chemin du fichier
 
-![Interface principale](16_APP_Systeme_Gestion_de_Stock/images/capture_start_view_programme.png)
+![Interface principale](images/capture_start_view_programme.png)
 
 
 ### Fenêtre d'ajout
-![Fenêtre d'ajout](16_APP_Systeme_Gestion_de_Stock/images/capture_ajout_reussi.png)
+![Fenêtre d'ajout](images/capture_ajout_reussi.png)
 
 
 1. Champs pour :
@@ -106,7 +106,7 @@ Cette application de gestion de stock développée en Python avec Tkinter permet
 
 
 ### Fenêtre de modification
-![Fenêtre de modification](16_APP_Systeme_Gestion_de_Stock/images/capture_modification.png)
+![Fenêtre de modification](images/capture_modification.png)
 
 
 1. Sélection des champs à modifier
